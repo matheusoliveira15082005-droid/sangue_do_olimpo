@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#15131c"><title>Sangue do Olimpo | Oráculo dos Destinos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<header class="top"><div class="mark">✦</div><div><div class="brand">SANGUE DO OLIMPO</div><div class="subtitle">ORÁCULO DOS DESTINOS</div></div><div class="tag">SISTEMA D100</div></header>
+<main>
+<section class="intro"><div class="eyebrow">✧ O destino não está escrito. Está sendo lançado. ✧</div><h1>O poder dos deuses,<br><span>o destino dos mortais.</span></h1><p>Faça sua rolagem. Que os deuses testemunhem o resultado.</p></section>
+<section class="panel"><div class="section-heading"><span>Ⅰ</span> CONFIGURAÇÃO DA ROLAGEM</div>
+<div class="field"><label for="type">TIPO DE TESTE</label><select id="type"><option value="general">Teste geral</option><option value="combat">Combate</option><option value="blessing">Bênção divina</option><option value="skill">Habilidade</option><option value="defense">Defesa / esquiva</option></select></div>
+<div class="row"><div class="field"><label for="bonus">BÔNUS (+)</label><input id="bonus" type="number" value="0"></div><div class="field"><label for="penalty">PENALIDADE (−)</label><input id="penalty" type="number" value="0"></div></div>
+<div class="field"><label for="note">PERSONAGEM / CONTEXTO <span>(OPCIONAL)</span></label><input id="note" type="text" placeholder="Nome do personagem ou ação"></div>
+<button id="roll" class="roll-button">✦ LANÇAR D100 ✦</button>
+<div class="result" id="result" aria-live="polite"><div class="result-label">AGUARDANDO O LANÇAMENTO</div><div class="dice">—</div><div class="outcome">O oráculo aguarda.</div><p class="description">Configure seu teste e lance os dados.</p></div>
+</section>
+<section class="panel rules"><div class="section-heading"><span>Ⅱ</span> ESCALA DO ORÁCULO</div><div class="scale"><div><b>01–05</b><strong>Falha crítica</strong><small>O destino se volta contra você.</small></div><div><b>06–25</b><strong>Falha</strong><small>O intento não se concretiza.</small></div><div><b>26–49</b><strong>Êxito parcial</strong><small>Há progresso, mas a um custo.</small></div><div><b>50–74</b><strong>Êxito</strong><small>Você alcança seu objetivo.</small></div><div><b>75–94</b><strong>Êxito superior</strong><small>Seu feito supera o esperado.</small></div><div><b>95–100</b><strong>Êxito extraordinário</strong><small>Um feito digno de lenda.</small></div></div><p class="hint">Escala-base editável conforme as regras do seu RPG. O resultado final considera bônus e penalidades.</p></section>
+<section class="panel history"><div class="section-heading"><span>Ⅲ</span> REGISTRO DAS ROLAGENS <button class="clear" id="clear">Limpar</button></div><ul id="history"><li class="empty">Nenhuma rolagem registrada.</li></ul></section>
+</main><footer>✦ SANGUE DO OLIMPO · SISTEMA EXPERIMENTAL ✦</footer><script src="engine.js"></script><script src="script.js"></script>
+</body></html>
